@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile of candidate</title>
+    <style>
+        body {
+            padding-left: 5pc;
+            background-color: darkkhaki;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        p {
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h2>{{ candidate.name }}</h2>
+    <img src="{{ candidate.picture }}" width="200" alt="Some picture"/>
+    <hr>
+    <p>{{ candidate.age }} y.o.</p>
+    <p>Position {{ candidate.position }}</p>
+    <p>Skills - {{ candidate.skills }}</p>
+</main>
+</body>
+</html>
