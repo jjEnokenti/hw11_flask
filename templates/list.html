@@ -3,27 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
-    <style>
-        body {
-            padding-left: 5pc;
-            background-color: darkkhaki;
-        }
-
-        h1 {
-            color: black;
-        }
-
-        p {
-            font-size: 20px;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/static/styles/style.css">
 </head>
 <body>
 <div>
   <h1>All candidates</h1>
   {% for candidate in candidates %}
-  <p> {{ candidate.id }} <a href="/candidate/{{candidate.id}}">{{ candidate.name }} </a></p>
+  <p> {{ candidate.id }} <a href="/candidate/{{candidate.id}}/">{{ candidate.name }} </a></p>
   {% endfor %}
 </div>
 </body>
